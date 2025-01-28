@@ -1,11 +1,12 @@
 // src/HelloWorld.js
 import React from "react";
 
-const HelloWorld = () => {
+const HelloWorld = ({ name = "World" }) => {
   return (
-    <div>
-      <h1>Hello, React World!</h1>
-    </div>
+    <>
+      <h1>Hello, {name}!</h1>
+      <img src="logo192.png" alt="Logo"></img>
+    </>
   );
 };
 export default HelloWorld;
